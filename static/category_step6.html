@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="여행과 보따리">
+    <meta property="og:description" content="여행과 보따리">
+    <title>여행과 보따리</title>
+    <link rel="stylesheet" href="./css/base.css" id="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" id="stylesheet">
+    <link rel='stylesheet' href='./css/daterangepicker.css'>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="light-grey">
+
+<nav class="pc-menu">
+    <div class="container">
+        <a href="#" class="logo"></a>
+        <div class="util">
+            <div class="util-name">오늘도 <span>여</span><span>보</span> 하세요</div>
+            <div class="util-cover">
+                <button class="total-menu">
+                </button>
+                <div class="travel-img"><img src="./images/img-base.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="nation close step6">
+    <button class="nation-btn"></button>
+    <div class="nation-thumb">
+        <div class="nation-caution ">
+            <span></span>
+        </div>
+        <div class="nation-flag"><img src="./images/flag.png" alt=""></div>
+        <div class="nation-temp">
+            <div class="temp-hot">
+                <i></i>
+                <h6>예상되는 최고기온은 <span>섭시 12도</span></h6>
+            </div>
+            <div class="temp-cold">
+                <i></i>
+                <h6>예상되는 최저기온은 <span>섭시 7도</span></h6>
+            </div>
+        </div>
+    </div>
+    <div class="nation-contents">
+        <div class="nation-row">
+            <div class="nation-caution-wrap step1">
+                <div class="nation-caution ">
+                    <span></span>
+                </div>
+            </div>
+            <div class="nation-flag"><img src="./images/flag.png" alt=""></div>
+            <div class="nation-infor">
+                <ul>
+                    <li>수도</li>
+                    <li>레이캬비크</li>
+                </ul>
+                <ul>
+                    <li>대륙</li>
+                    <li>유럽</li>
+                </ul>
+                <ul>
+                    <li>인구</li>
+                    <li>37.25만</li>
+                </ul>
+                <ul>
+                    <li>공식언어</li>
+                    <li>아이슬란드어</li>
+                </ul>
+            </div>
+        </div>
+        <div class="nation-graph">
+            <canvas id="nation-graph"></canvas>
+        </div>
+        <div class="nation-temp">
+            <div class="temp-hot">
+                <i></i>
+                <h6>여행기간동안 예상되는 최고기온은 <span>섭시 12도</span></h6>
+            </div>
+            <div class="temp-cold">
+                <i></i>
+                <h6>여행기간동안 예상되는 최저기온은 <span>섭시 7도</span></h6>
+            </div>
+        </div>
+        <div class="nation-txt">
+            <p>아이슬란드는 화산과 온천으로 유명해요!<br>
+            김보따리님이 잊지 않도록 물놀이 용품과 방수용품은 여행과 보따리가 추천드릴게요.</p>
+            <div class="nation-txt-info">
+                <p>더 상세한 정보가 알고 싶다면</p>
+                <div class="btns">
+                    <button class="kakao"><i></i>카카오톡으로 받기</button>
+                    <button class="mail"><i></i>이메일로 받기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="category">
+    <div class="category-title">카테고리 별 베스트 상품 이미지를 보여주고 있어요. 이제 탐험을 떠나 볼까요!</div>
+    <div class="category-contents">
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="cate-img"><img src="./images/category-img01.png" alt=""></div>
+                    <div class="cate-txt">모자</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="cate-img"><img src="./images/category-img02.png" alt=""></div>
+                    <div class="cate-txt">셔츠</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="cate-img"><img src="./images/category-img03.png" alt=""></div>
+                    <div class="cate-txt">바지</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="cate-img"><img src="./images/category-img04.png" alt=""></div>
+                    <div class="cate-txt">신발</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="cate-img"><img src="./images/category-img05.png" alt=""></div>
+                    <div class="cate-txt">캐리어</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="cate-img"><img src="./images/category-img06.png" alt=""></div>
+                    <div class="cate-txt">배낭</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="cate-img"><img src="./images/category-img07.png" alt=""></div>
+                    <div class="cate-txt">응급도구</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="cate-img"><img src="./images/category-img08.png" alt=""></div>
+                    <div class="cate-txt">악세사리</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="basket">
+    <button class="basket-go">추천용품 바로가기</button>
+    <div class="basket-title"><i></i>장바구니</div>
+    <div class="basket-text">
+        <ul class="hand">
+            <li>허용 휴대 수화물</li>
+            <li>10kg</li>
+        </ul>
+        <ul class="suitcase">
+            <li>허용 위탁 수화물</li>
+            <li>20kg</li>
+        </ul>
+        <ul class="shop">
+            <li>장바구니 예상 무게</li>
+            <li>9.7kg</li>
+        </ul>
+    </div>
+    <div class="basket-contents">
+        <div class="basket-kg">
+            <div class="basket-kg-title">
+                <h4>지퍼 방수 파우치-브라운</h4>
+                <button class="basket-close"></button>
+            </div>
+            <div class="basket-part-wrap">
+                <h6>￦ 5,400  |  ㎏ 0.4</h6>
+                <div class="basket-part">
+                    <button class="minus"></button>
+                    <h3>1</h3>
+                    <button class="plus"></button>
+                </div>
+            </div>
+        </div>
+        <div class="basket-kg">
+            <div class="basket-kg-title">
+                <h4>비상상비약 1종</h4>
+                <button class="basket-close"></button>
+            </div>
+            <div class="basket-part-wrap">
+                <h6>￦ 12,800  |  ㎏ 1.3</h6>
+                <div class="basket-part">
+                    <button class="minus"></button>
+                    <h3>1</h3>
+                    <button class="plus"></button>
+                </div>
+            </div>
+        </div>
+        <div class="basket-kg">
+            <div class="basket-kg-title">
+                <h4>어린이 시럽 방수 약병 스티커</h4>
+                <button class="basket-close"></button>
+            </div>
+            <div class="basket-part-wrap">
+                <h6>￦ 3,900  |  ㎏ 0.1</h6>
+                <div class="basket-part">
+                    <button class="minus"></button>
+                    <h3>1</h3>
+                    <button class="plus"></button>
+                </div>
+            </div>
+        </div>
+        <div class="basket-kg">
+            <div class="basket-kg-title">
+                <h4>파워가드캐리어(대형)-메탈</h4>
+                <button class="basket-close"></button>
+            </div>
+            <div class="basket-part-wrap">
+                <h6>￦ 65,500  |  ㎏ 7.9</h6>
+                <div class="basket-part">
+                    <button class="minus"></button>
+                    <h3>1</h3>
+                    <button class="plus"></button>
+                </div>
+            </div>
+        </div>
+        <div class="basket-cash-wrap">
+            <button class="basket-cash">결제하기</button>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+
+
+<script>
+$(document).ready(function(){
+   $('.nation-btn').on('click',function(){
+      $('.nation').toggleClass('close');
+   });
+   $('.minus').click(function () {
+        var $input = $(this).parent().find('h3');
+        var count = parseInt($input.text()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.text(count);
+        $input.change();
+        return false;
+    });
+    $('.plus').click(function () {
+        var $input = $(this).parent().find('h3');
+        $input.text(parseInt($input.text()) + 1);
+        $input.change();
+        return false;
+    });
+});
+const ctx = document.getElementById('nation-graph');
+const data = [
+  {x: 'Jan', HighC: 3, LowC: -3}, 
+  {x: 'Feb', HighC: 2, LowC: -2},
+  {x: 'Mar', HighC: 2, LowC: -2},
+  {x: 'Apr', HighC: 4, LowC: 2}, 
+  {x: 'May', HighC: 7, LowC: 4},
+  {x: 'Jun', HighC: 8, LowC: 4},
+  {x: 'Jul', HighC: 9, LowC: -3}, 
+  {x: 'Aug', HighC: 15, LowC: -2},
+  {x: 'Sep', HighC: 13, LowC: -2},
+  {x: 'Oct', HighC: 8, LowC: -3}, 
+  {x: 'Nov', HighC: 6, LowC: -2},
+  {x: 'Dec', HighC: 2, LowC: -2},
+];
+new Chart(ctx, {
+type: 'bar',
+data: {
+    datasets: [{
+      label: 'High C',
+      backgroundColor: "#3B6EB6",
+      data: data,
+      parsing: {
+        yAxisKey: 'HighC'
+      }
+    }, {
+      label: 'Low C',
+      backgroundColor: "#ED1C24",
+      data: data,
+      parsing: {
+        yAxisKey: 'LowC'
+      }
+    }]
+},
+options: {
+    scales: {
+      x: {
+        display: true,
+      },
+      y: {
+        display: true,
+        title: {
+          display: true,
+          position: 'left',
+          text: '℃'
+        },
+      }
+    }
+  },
+});
+</script>

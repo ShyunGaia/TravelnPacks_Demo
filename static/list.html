@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="여행과 보따리">
+    <meta property="og:description" content="여행과 보따리">
+    <title>여행과 보따리</title>
+    <link rel="stylesheet" href="./css/base.css" id="stylesheet">
+    <link rel="stylesheet" href="./css/style_vietnam.css" id="stylesheet">
+    <link rel='stylesheet' href='./css/daterangepicker.css'>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="light-grey">
+
+    <nav class="pc-menu">
+        <div class="container">
+            <a class="logo"></a>
+            <div class="util">
+                <div class="util-name">오늘도 <span>여</span><span>보</span> 하세요</div>
+                <div class="util-cover">
+                    <div class="total-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="hamburger-menu">
+                        <h6>안녕하세요 [<span>이준구</span>]님!</h6>
+                        <a><h6>커뮤니티</h6></a>
+                        <a><h6>로그아웃</h6></a>
+                    </div>
+                    </button>
+                    <div class="travel-img"><img src="./images/img-base.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+<div class="nation close step2">
+
+    <!-- CLICK 버튼 -->
+    <button class="nation-btn"></button>
+
+    <!-- 사이드바 접힌 상태 표시 내용 -->
+    <div class="nation-thumb">
+        <div class="nation-caution ">
+            <span></span>
+        </div>
+        <h4>여행자제
+            <span>국내 대도시보다 매우 높은 수준의 위험</span>
+        </h4>
+        <div class="nation-flag"><img src="./images/flag_vietnam_round_corner.png" alt=""></div>
+        <div class="nation-temp">
+            <div class="temp-hot">
+                <i></i>
+                <h6>예상되는 최고기온은 <span>31°C</span></h6>
+            </div>
+            <div class="temp-cold">
+                <i></i>
+                <h6>예상되는 최저기온은 <span>24°C</span></h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="nation-contents">
+
+        <!-- Back to top button -->
+        <a id="top-button"></a>
+
+        <table>
+            <tr>
+                <td>
+                    <div class="nation-caution-wrap step1">
+                        <div class="nation-caution ">
+                            <span></span>
+                        </div>
+                        <h4>여행자제
+                            <span>국내 대도시보다 매우 높은 수준의 위험</span>
+                        </h4>
+                    </div>
+                </td>
+                <td>
+                    <div class="nation-summary">
+
+                        <h4>
+                            SUMMARY
+                        </h4>
+
+                        <div class="time-wrapper">
+                            <div class="time-local">
+                                <ul>
+                                    <li>
+                                        <i></i>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h6>현지시간<br/><span id="localT"></span></h6>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="time-korea">
+                                <ul>
+                                    <li>
+                                        <i></i>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h6>한국시간<br/><span id="rokT"></span></h6>
+                                    </li>
+                                </ul>        
+                            </div>
+                        </div>
+                        
+                        <div class="nation-temp">
+                            <div class="temp-hot">
+                                <i></i>
+                                <h6>여행기간동안 예상되는 최고기온은 <span>31°C</span></h6>
+                            </div>
+                            <div class="temp-cold">
+                                <i></i>
+                                <h6>여행기간동안 예상되는 최저기온은 <span>24°C</span></h6>
+                            </div>
+                        </div>
+
+                        <div class="nation-weather">
+                            <ul>
+                                <li>
+                                    <i></i>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>여행기간동안 맑은날씨는&nbsp;&nbsp;&nbsp;&nbsp;<span>2일</span></h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>여행기간동안 비는&nbsp;&nbsp;&nbsp;&nbsp;<span>86.0mm</span></h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>여행기간동안 눈은&nbsp;&nbsp;&nbsp;&nbsp;<span>0mm</span></h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>&nbsp;</h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>베트남은 열대기후로 습도가 높아요.</h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>이준구님께&nbsp;&nbsp;&nbsp;<span>매쉬소재의 시원한 셔츠</span>와 <span>뿌리는 모기 기피제</span>를 추천드릴게요!</h6>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="remind-info">
+                            <div class="passport-expire">
+                                <ul>
+                                    <li>
+                                        <i></i>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h6>여권 만료까지<br/><span>D-78</span></h6>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h6>비자 만료까지<br/><span>D-14</span></h6>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="emergency-contact">
+                                <ul>
+                                    <li>
+                                        <i></i>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h6>대사관 연락처:&nbsp;&nbsp;&nbsp;&nbsp;<span>(84) 2437710404</span></h6>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h6>사건사고 긴급 연락처:&nbsp;&nbsp;&nbsp;&nbsp;<span>(84) 904026126</span></h6>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h6>경찰:&nbsp;&nbsp;&nbsp;&nbsp;<span>113</span></h6>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h6>응급실:&nbsp;&nbsp;&nbsp;&nbsp;<span>115</span></h6>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                        
+
+                        <div class="airport">
+                            <ul>
+                                <li>
+                                    <i></i>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>국제공항:&nbsp;&nbsp;&nbsp;&nbsp;<span>노이바이 국제공항 / CẢNG HÀNG KHÔNG QUỐC TẾ NỘI BÀI</span></h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>분실물 보관소:&nbsp;&nbsp;&nbsp;&nbsp;<span>로비 E</span></h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>분실문 관련 문의:&nbsp;&nbsp;&nbsp;&nbsp;<span>0983774546</span></h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>WIFI:&nbsp;&nbsp;&nbsp;&nbsp;<span>Noi Bai Airport Free Wi-Fi / App 다운로드 필요</span></h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>                                
+                                    <div>
+                                        <button class="map-airport" onclick="window.open('https\://vietnamairport.vn/noibaiairport/picture/so-do-nha-ga','_blank')">공항 시설안내</button>
+                                        <button class="website-lostandfound" onclick="window.open('https\://bags.noibaiairport.vn//','_blank')">공항 분실물 등록 및 찾기</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="nation-infor">
+                        <ul>
+                            <li><img src="./images/flag_vietnam_round_corner.png" alt=""></li>
+                            <li></li>  
+                        </ul>
+                        <ul>
+                            <li>수도</li>
+                            <li>하노이</li>
+                        </ul>
+                        <ul>
+                            <li>대륙</li>
+                            <li>동남아시아</li>
+                        </ul>
+                        <ul>
+                            <li>인구</li>
+                            <li>9747만</li>
+                        </ul>
+                        <ul>
+                            <li>공식언어</li>
+                            <li>베트남어</li>
+                        </ul>
+                        <ul>
+                            <li>면적</li>
+                            <li>33,341km²</li>
+                        </ul>
+                        <ul>
+                            <li>민족</li>
+                            <li>베트남족, 53개소수민족</li>
+                        </ul>
+                        <ul>
+                            <li>종교</li>
+                            <li>무종교 84.0%<br/>
+                                불교 7.0%<br/>
+                                가톨릭 5.9%<br/>
+                                기타 3.1%
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>기후</li>
+                            <li>
+                                연평균 기온 24.1도<br/>
+                                습도 월평균 83%<br/>
+                                연평균 강우량은 한국의 약 2.4배
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>화폐단위</li>
+                            <li>베트남 동 (VND)</li>
+                        </ul>
+                        <ul>
+                            <li>시차</li>
+                            <li>-2시간</li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div class="nation-entrance">
+                        <div class="map-wrap">
+                            <button class="map-worldwide" onclick="window.open('https\://www.0404.go.kr/new_osm/index_x.jsp?a1=11863026.789859&a2=1976355.803342&a3=5&a4=','_blank')">전세계 여행경보 지도</button>
+                        </div>
+                        <img src="./images/country_view_vietnam.jpg" alt="">
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <div class="nation-graph">
+                        <canvas id="nation-graph" style="height:50vh; width:50vw"></canvas>
+                    </div>
+                </td>
+            </tr>
+
+            <tr >
+                <td colspan="2">
+                    <div class="nation-locale-info">
+                        <div class="info-title"><h2>현지 연락처</h2></div>
+                        <ul>
+                            <li>
+                                <b>대사관 연락처</b>
+                            </li>
+                            <li>
+                                <a href="https://overseas.mofa.go.kr/vn-ko/index.do"  target="_blank">주베트남대사관</a><br>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 주소 :
+                            </li>
+                            <li>
+                                SQ4, Do Nhuan, Khu Ngaoi Giao Doan, Xuan Tao, Bac Tu Liem, Hanoi, Vietnam
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 대표번호(근무시간 중) :
+                            </li>
+                            <li>
+                                (84) 24-3771-0404
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 긴급연락처(사건사고 등 긴급상황 발생 시, 24시간) :
+                            </li>
+                            <li>
+                                (84) 90-402-6126
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 이메일 :
+                            </li>
+                            <li>
+                                korembviet@mofa.go.kr
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <b>호치민 총영사관 연락처</b>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 주소 :
+                            </li>
+                            <li>
+                                107 Nguyen Du St., Dist 1, Ho Chi Minh city, VietNam
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 대표번호(근무시간 중) :
+                            </li>
+                            <li>
+                                (84) 28-3822-5757
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 긴급연락처(사건사고 등 긴급상황 발생 시, 24시간) :
+                            </li>
+                            <li>
+                                (84) 93-850-0238
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 이메일 :
+                            </li>
+                            <li>
+                                hcm02@mofa.go.kr
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <b>다낭 총영사관 연락처</b>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 주소 :
+                            </li>
+                            <li>
+                                Tang 3-4, Lo A1-2 Chuong Duong, P.Khue My, Q.Ngu Hanh Son, T.P Da Nang, Vietnam
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 대표번호(근무시간 중) :
+                            </li>
+                            <li>
+                                (84) 23-6356-6100
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 긴급연락처(사건사고 등 긴급상황 발생 시, 24시간) :
+                            </li>
+                            <li>
+                                (84) 93-112-0404
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 이메일 :
+                            </li>
+                            <li>
+                                danang@mofa.go.kr
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <b>주재국 신고</b>
+                            </li>
+                            <li>
+                                ※ 해당 긴급전화는 대부분 베트남어로만 가능하며, 구급차 이용 요금을 지불해야 할 수 있습니다.
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 범죄신고 :
+                            </li>
+                            <li>
+                                113
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 화재신고 :
+                            </li>
+                            <li>
+                                114
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 응급환자(앰뷸런스) :
+                            </li>
+                            <li>
+                                115
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="nation-locale-info">
+                        <div class="info-title"><h2>사건ㆍ사고</h2></div>
+                        <ul>
+                            <li>
+                                <b>사건ㆍ사고 현황</b>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                테러, 인질 등에 대한 상황 및 정세
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 베트남은 안정적인 정치체제하에서 강력한 공안 조직을 통해 타국에 비해<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                 상대적으로 양호한 치안 상태를 유지하고 있어 내란이나 테러 가능성은 낮은 것으로 평가됩니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                범죄 현황 등 치안상태
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 전반적으로 살인, 강도, 강간 등 강력범죄의 비율은 낮습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 그러나 휴대폰 날치기, 소매치기 등 절도 범죄 피해가 꾸준히 발생하고 있어<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                소지품 보관에 각별히 유의할 필요가 있습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 오토바이를 이용한 가방, 휴대폰 등 날치기 피해가 지속 발생하고 있습니다.<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                가급적 가방을 도로 반대방향에 두고, 현금은 소액만 소지하며<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                지갑은 몸 안쪽에 보관하는 것이 좋습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 특히 베트남에서 여권 분실 시 여권 재발급 외 별도로<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                출국사증 재발급(약 5일 소요)이 필요하므로 여권 분실에 각별히 유의할 필요가 있습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 또한 베트남은 마약 복용, 소지, 제조, 매매 등을 엄중히 처벌하므로<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                마약 복용 등 불법행위를 하지 않아야 합니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 베트남은 성매매 관련, 성매매자도 제재하며 특히 미성년자 성매매는<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                엄중히 처벌하니 불법행위를 하지 않아야 합니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <b>자연재해</b>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 하노이를 비롯한 북부지역 및 다낭ㆍ후에 ㆍ호이안 등 중부지역은 태풍의 영향권에 있어서<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                매년 많은 피해가 발생하고 있습니다.<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                특히 산간오지 및 섬의 경우 수시로 교통두절 현상이 발생하므로<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                산간오지 및 섬으로 들어갈 경우에는 주의를 요합니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 베트남은 상대적으로 배수시설이 잘 되어 있지 않아서 집중적으로 비가 오게 되면<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                침수피해가 발생할 수 있으며 차량 통행에 많은 어려움을 겪을 수 있습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <b>안전사고</b>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 리조트․해변 등에서 물놀이 중 다치거나 익수 사고로 사망하는<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                안전사고가 종종 발생하고 있습니다.<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                음주 후에 수영․스쿠버다이빙․스노클링 등은 절대 하시면 안 됩니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 순환기계․신경계 질환이 있는 분 기타 영유아의<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                물놀이 사고에 각별히 유의하여야 합니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 배를 탈 때에는 반드시 구명복 등 안전 장비를 착용하기 바라며,<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                장비․기구에 이상이 없는지 확인하기 바라며<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                바다․호수에 빠질 수 있는 위험한 행동은 삼가야 합니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 물놀이 전 기상 예보를 확인하고 바다에서 물놀이 시에는<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                기상 변화를 확인하여 갑작스런 날씨 변화에 대비하기 바랍니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <b>뎅기열 유의</b>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 뎅기열은 뎅기 바이러스에 감염된 매개 모기에 물리면 발병하는 질병입니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 뎅기열로 인한 사망 사례도 계절과 상관없이<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                지속 발생하고 있으니 유의할 필요가 있습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 모기기피제를 적극 사용하고 외출 시에는 노출 부위를 최소화하기 바랍니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 야외활동 시 모기가 많이 있는 풀숲 및 산속 등은 가급적 방문을 지양하기 바랍니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 뎅기열은 잠복기가 평균 5~7일이고 잠복기 후 발열기가 찾아와<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                본격적인 증상(고열, 두통, 근육통, 관절통, 식욕부진)이 나타나므로<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                이런 증상이 있는 경우 바로 종합병원에 내원하여 치료를 받으시기 바랍니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>                        
+                    </div>
+                </td>
+            </tr>
+            <tr >
+                <td colspan="2">
+                    <div class="nation-locale-info">
+                        <div class="info-title"><h2>현지문화</h2></div>
+                        <ul>
+                            <li>
+                                <b>일반문화</b>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                베트남 인사 이름 부르기
+                            </li>
+                            <li>
+                                - 직함과 함께 부를 때는 [직함 + full name : President Nguyen Xuan Phuc] 와<br/>
+                                 같이 부르도록 합니다.
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <b>이름 표기 방식</b>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 우리와 같이 성과 이름 삼 음절로 성-중간 이름-끝<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                이름으로 구성되는데 한국과 달리 끝 이름만으로 부릅니다.
+                            </li>
+                            <li>
+                                - 베트남 이름의 경우 가운데 이름만으로 성별을 알 수 있는데,<br/>
+                                Van(반)은 남자 이름에, Thi(티)는 여자 이름에 보통 사용합니다.
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <b>오만찬시</b>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 베트남 초청자 측이 오만찬을 대접할 경우 반드시 감사의 표시로 답방을 요청하는 것이 좋습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 주최 측의 건배 제의를 시작으로 상호 건배를 제안합니다.<br/>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 주최 측이 건배를 제의할 때는 최고 선임자나 연장자를 보고<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                일어나서 양손으로 술잔을 들며 간단한 덕담을 하는 것이 좋습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 헤어질 때는 모든 베트남 참석자들과 악수하고 감사를 표시하도록 합니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <b>종교 관련</b>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 베트남도 법령에 따라 종교의 자유 및 종교 전파의 자유를 인정하나,<br/>&nbsp;&nbsp;&nbsp;&nbsp; 
+                                여전히 베트남 사회에서 누구에게나 자신의 종교 또는 종교적 확신을 알리고 선전하는<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                전파의 자유는 민감하고 조심스러운 부분이라고 인식하는 경향이 있으니 유의할 필요가 있습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <b>국민성</b>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 베트남은 오랜 세월 동안 끊임없는 외침을 모두 물리친 국민으로 자신들을 표현하며,<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                중국․프랑스․미국 등 강대국에 굴하지 않은 역사에 대한 자부심이 강한 편입니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <b>음식문화</b>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 베트남의 식습관은 공동생활의 특징을 잘 나타내고 있음.
+                            </li>
+                            <li>
+                                -  여러 사람이 먹을 수 있도록 큰 그릇에 담아 식탁위에 놓고 함께 먹습니다.
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 식사 후 따뜻한 차를 마시는 문화가 발달되어 있습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 뜨거운 날씨로 다양한 음료문화가 발달하여 시내 곳곳에는 천막 카페부터<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                고급카페까지 카페의 종류가 다양한 것을 볼 수 있습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 음식과 함께 술을 곁들여 마시는 편이며 1:1로 건배를 하고 잔을 비우고 악수를 하는 것이 예의입니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 1:1로 건배를 할 시 우리나라의 위하여와 같은 “쭉 슥 쾌, (건강을 위하여라는 의미)”<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                또는 “못 하이 바 요 (하나 둘 셋 건배라는 의미)”등의 건배 구호가 있습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr >
+                <td colspan="2">
+                    <div class="nation-locale-info">
+                        <div class="info-title"><h2>교통 정보</h2></div>
+                        <ul>
+                            <li>
+                                <b>주요 교통 법규 및 문화</b>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                운전면허
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 베트남의 경우, 운전면허증 교환 절차를 거쳐 우리나라 운전면허증 소지 시<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                베트남 운전면허증을 별도 시험 없이 발급받을 수 있습니다.
+                            </li>
+                            <li>
+                                ※ 다만 해당 교환 절차는 사증 소지자만 가능합니다.
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 또한 우리나라가 가입한 제네바 협약에 따른 국제운전면허증은 인정되지 않습니다.
+                            </li>
+                            <li>
+                                ※ 비엔나 협약에 따른 국제운전면허증만 인정됩니다.
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <b>관련 사건사고 사례</b>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                대중교통
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 베트남은 크게 하노이 등 북부지역, 다낭 등 중부 지역, 호치민 등 남부지역 등으로<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                구분되며 북부~중부~남부 간 이동 시에는 대부분 항공을 이용하여 이동하는 경우가 많습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 또한 주요 도시나 지방을 연결하는 시외버스는 매우 혼잡하기 때문에 장거리 이동시에는<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                슬리핑버스 또는 차량을 따로 임대하여 이동하는 경우가 많습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 그 외 하노이, 호치민 등 대도시 내 도시 중심지를 연결하는 시내 버스가 운행되고 있으며<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                향후 전철 노선의 운행도 확대되는 등 대중 교통에서 발전이 있을 것으로 전망됩니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 한편, 택시의 기본요금은 약 9000-15,000VND까지 있으며,<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                택시회사마다 요금 체계가 달라 회사별로 요금에 차이가 있어 유의할 필요가 있습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 최근에는 스마트폰 어플리케이션을 이용한 콜택시 서비스가 대중화되어 외국인도<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                편리하게 택시 이용이 가능합니다.<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                특히 바가지 요금 등 현지에서 택시 이용 시 발생할 수 있는 문제에 대한<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                부담이 적어 이용객이 증가하는 추세입니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <b>기타 유의사항</b>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 한편 직접운전은 사고 야기 시 국내에 비해 큰 민형사상<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                책임을 질 우려가 있어 유의할 필요가 있습니다.
+                            </li>
+                            <li>
+                                ※ 베트남 형법은 일정한 가중 사유를 규정하고 (2인 이상 사망 등),<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                이에 따라 중형을 선고하는 사례가 있으므로 직접 운전 시 유의해야 합니다.
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 국내에 비해 열악한 응급 의료 체계를 고려, 이륜차 승차 자제,<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                안전벨트 착용, 영유아 카시트 착용 등을 생활화 하는 것이 좋습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 무단횡단을 절대 하지 않아야 하며,<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                심야운전, 심야 통행 시에는 각별히 유의해야 합니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 자동차보험의 보장금액이 낮은 편이고 여행객은 귀국 일정 및<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                언어 문제 등으로 현실적으로 적정한 보상을 받기 불리한 상황적 요인이 있습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 이에 여행객은 여행자 보험가입, 장기체류 우리 국민은 직장 및<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                해외 체류 보험 등을 통해 만약의 교통사고 피해에 대비하실 것을 권고드립니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="nation-locale-info">
+                        <div class="info-title"><h2>기타</h2></div>
+                        <ul>
+                            <li>
+                                <b>기타</b>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                한국과의 시차
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 시차 : 한국보다 2시간 늦음
+                            </li>
+                            <li>
+                                - 예 : 한국 09시 일 때 베트남은 07시
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                전기 규격
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 전기 규격은 유럽 표준과 같은 220V, 50Hz이며 콘센트 규격은 다양하나,<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                대개의 경우 한국 제품을 그대로 사용할 수 있는 콘센트가 많습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 국내와 주파수가 다르므로 우리나라(220V, 60Hz)주파수에 민감한<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                전자제품 및 국내 전용모델은 베트남에서 성능저하 또는 고장을 일으킬 수 있습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 휴대전화, 전기면도기 등은 본래 50/60 HZ 겸용이 많으므로<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                베트남에서 사용 시 문제가 없습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                환전 및 결제 관행
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 100VND=5원 수준으로 100,000 VND는 우리 돈 약 5,000원에 상응합니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 동전을 사용하지 않으며 최고액권은 500,000 VND(약 25,000원)이며<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                최저액권은 500VND(약 25원)이나 잘 사용되지 않아 1000VND 이하는<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                버림 또는 반올림 하여 계산하는 것이 일반적입니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 신용카드 보급률이 떨어지고 혜택도 적은 편으로 여전히 다수의 사람들이<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                현금거래를 선호하여 외출 시 항상 일정한 현금을 가지고 있는 것이 좋습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 한편 베트남도 전자상거래가 발달하는 추세이며,<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                한국과 유사한 배달, 택배 문화가 있습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 택배 등 거래 시 선 결제하는 우리와 달리,<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                판매자 또는 배달원에게 직접 결제하는 것도 가능합니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                통신
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 복수의 휴대전화 회사가 LTE, 4G 데이터 통신 서비스를 제공합니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 다만 일부 장소에서 감도 저하, 통화품질 저하, 등이<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                다수 발생할 수 있고 국제전화 시에도 불편을 겪을 수 있습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                ㅇ 우리나라와 같이 다수의 사람들이 메신저 앱을 통한 통신을 사용하나,<br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                일부 사용자는 문자와 전화만 사용하는 경우도 있습니다.
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">
+                    <div class="nation-txt">
+                        <p>베트남은 호수와 해안으로 유명해요!<br>
+                        이준구님이 잊지 않도록 물놀이 용품과 방수용품은 여행과 보따리가 추천드릴게요.</p>
+                        <div class="nation-txt-info">
+                            <p>Any where, Any time<br/>여행의 모든 정보를 간편하게 받아보세요!</p>
+                            <div class="btns">
+                                <button class="kakao"><i></i>카카오톡으로 받기</button>
+                                <button class="mail"><i></i>이메일로 받기</button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="list">
+    <ul>
+        <li id="link_detail">
+            <a>
+                <div class="list-img"><img src="./images/carrier.jpg" alt=""></div>
+                <div class="list-txt">
+                    <h5>ROWROW TRUNK 930 FRAME ep.2<br/>29인치 ORANGE & BROWN (88L)</h5>
+                    <div class="list-money-wrap">
+                        <div class="list-money">
+                            <span>399,000</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="list-img"><img src="./images/carrier_11.jpg" alt=""></div>
+                <div class="list-txt">
+                    <h5>Samsonite MINTER</h5>
+                    <div class="list-money-wrap">
+                        <div class="list-money">
+                            <span>569,000</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="list-img"><img src="./images/carrier_2.jpg" alt=""></div>
+                <div class="list-txt">
+                    <h5>NG N6501P8 28형 20형 여행용 캐리어</h5>
+                    <div class="list-money-wrap">
+                        <div class="list-money">
+                            <span>124,900</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="list-img"><img src="./images/carrier_3.jpg" alt=""></div>
+                <div class="list-txt">
+                    <h5>프리미엄 여행용캐리어 28인치<br/>수화물용 SM-C628N 딥블랙</h5>
+                    <div class="list-money-wrap">
+                        <div class="list-money">
+                            <span class="strike">250,000</span>
+                            <span>220,500</span>
+                        </div>
+                        <div class="list-sale">
+                            <span class="icon new">NEW</span>
+                            <span>10%</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="list-img"><img src="./images/carrier_4.jpg" alt=""></div>
+                <div class="list-txt">
+                    <h5>미니캐리어 여행용 레디백 14인치 크림화이트</h5>
+                    <div class="list-money-wrap">
+                        <div class="list-money">
+                            <span class="strike">75,000</span>
+                            <span>20,000</span>
+                        </div>
+                        <div class="list-sale">
+                            <span class="icon clear">클리어런스</span>
+                            <span>73%</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="list-img"><img src="./images/carrier_5.jpg" alt=""></div>
+                <div class="list-txt">
+                    <h5>오픈형 컵홀더 20 24형 여행용 기내용 캐리어</h5>
+                    <div class="list-money-wrap">
+                        <div class="list-money">
+                            <span class="strike">190,000</span>
+                            <span>99,000</span>
+                        </div>
+                        <div class="list-sale">
+                            <span>48%</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="list-img"><img src="./images/carrier_6.jpg" alt=""></div>
+                <div class="list-txt">
+                    <h5>여행용 프리미엄 방탄캐리어 The 루미나<br/>28인치 아이보리 화이트</h5>
+                    <div class="list-money-wrap">
+                        <div class="list-money">
+                            <span class="strike">16,000</span>
+                            <span>14,400</span>
+                        </div>
+                        <div class="list-sale">
+                            <span>10%</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="list-img"><img src="./images/carrier_7.jpg" alt=""></div>
+                <div class="list-txt">
+                    <h5>더플 RG 85리터 여행용 방수 캐리어 </h5>
+                    <div class="list-money-wrap">
+                        <div class="list-money">
+                            <span class="strike">471,000</span>
+                            <span>423,900</span>
+                        </div>
+                        <div class="list-sale">
+                            <span>10%</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="list-img"><img src="./images/carrier_8.jpg" alt=""></div>
+                <div class="list-txt">
+                    <h5>아이레 20 26인치 PC 캐리어<br/>여행용 기내용 수화물</h5>
+                    <div class="list-money-wrap">
+                        <div class="list-money">
+                            <span>98,000</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="list-img"><img src="./images/carrier_9.jpg" alt=""></div>
+                <div class="list-txt">
+                    <h5>여행용캐리어 글라이드 IS-A926<br/>26인치 수화물용 샴페인골드</h5>
+                    <div class="list-money-wrap">
+                        <div class="list-money">
+                            <span>83,000</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="list-img"><img src="./images/carrier_10.jpg" alt=""></div>
+                <div class="list-txt">
+                    <h5>메탈 클래식 20 24 29형<br/>여행용 기내용 캐리어</h5>
+                    <div class="list-money-wrap">
+                        <div class="list-money">
+                            <span>159,000</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="list-img"><img src="./images/carrier_12.jpg" alt=""></div>
+                <div class="list-txt">
+                    <h5>Samsonite UPSCAPE</h5>
+                    <div class="list-money-wrap">
+                        <div class="list-money">
+                            <span>321,000</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="basket">
+    <button class="basket-go">추천용품 바로가기</button>
+    <div class="basket-title"><i></i>장바구니</div>
+    <div class="basket-text">
+        <ul class="hand">
+            <li>허용 휴대 수화물</li>
+            <li>10kg</li>
+        </ul>
+        <ul class="suitcase">
+            <li>허용 위탁 수화물</li>
+            <li>20kg</li>
+        </ul>
+        <ul class="shop">
+            <li>장바구니 예상 무게</li>
+            <li>0kg</li>
+        </ul>
+    </div>
+    <div class="basket-contents">
+        <div class="basket-blank">
+            <h4>장바구니가 비어 있네요</h4>
+            <p>오늘은 보따리에 무엇을 담아 볼까요?</p>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+
+
+<script>
+$(document).ready(function(){
+    var domainUrl = window.location.origin;
+    var tBtn = $('#top-button');
+
+   $('.nation-btn').on('click',function(){
+      $('.nation').toggleClass('close');
+      if($('.nation').hasClass('close')) {
+        tBtn.removeClass('show');
+      }
+   });
+
+   $('.logo').on('click', function () {
+        window.location.href = domainUrl + '/index.html';
+    });
+
+    $('#link_detail').on('click', function () {
+        window.location.href = domainUrl + '/detail.html';
+    });
+
+    setInterval(updateClock, 1000);
+
+    $('.nation-contents').scroll(function() {
+    if ($('.nation-contents').scrollTop() > 300) {
+        tBtn.addClass('show');
+    } else {
+        tBtn.removeClass('show');
+    }
+    });
+
+    tBtn.on('click', function(e) {
+        e.preventDefault();
+        $('html, .nation-contents').animate({scrollTop:0}, '300');
+    });
+
+    $('.total-menu, .travel-img').click(function(){
+		$('.total-menu, .util-cover').toggleClass('open');
+        $('.hamburger-menu').toggleClass('open');
+	});
+
+    $('.basket-go').on('click', function () {
+        window.location.href = domainUrl + '/category_step2_vietnam.html';
+    });
+
+});
+
+function updateClock() {
+        const localTime = new Date().toLocaleString('ko-KR', {timeZone: 'Asia/Bangkok'});
+        const rokTime = new Date().toLocaleString('ko-KR', {timeZone: 'Asia/Seoul'});
+
+        document.getElementById('localT').innerHTML = localTime;
+        document.getElementById('rokT').innerHTML = rokTime;
+}
+
+const ctx = document.getElementById('nation-graph');
+const data = [
+  {x: 'Jan', HighC: 3, LowC: -3}, 
+  {x: 'Feb', HighC: 2, LowC: -2},
+  {x: 'Mar', HighC: 2, LowC: -2},
+  {x: 'Apr', HighC: 4, LowC: 2}, 
+  {x: 'May', HighC: 7, LowC: 4},
+  {x: 'Jun', HighC: 8, LowC: 4},
+  {x: 'Jul', HighC: 9, LowC: -3}, 
+  {x: 'Aug', HighC: 15, LowC: -2},
+  {x: 'Sep', HighC: 13, LowC: -2},
+  {x: 'Oct', HighC: 8, LowC: -3}, 
+  {x: 'Nov', HighC: 6, LowC: -2},
+  {x: 'Dec', HighC: 2, LowC: -2},
+];
+new Chart(ctx, {
+type: 'bar',
+data: {
+    datasets: [{
+      label: 'High C',
+      backgroundColor: "#3B6EB6",
+      data: data,
+      parsing: {
+        yAxisKey: 'HighC'
+      }
+    }, {
+      label: 'Low C',
+      backgroundColor: "#ED1C24",
+      data: data,
+      parsing: {
+        yAxisKey: 'LowC'
+      }
+    }]
+},
+options: {
+    scales: {
+      x: {
+        display: true,
+      },
+      y: {
+        display: true,
+        title: {
+          display: true,
+          position: 'left',
+          text: '℃'
+        },
+      }
+    }
+  },
+});
+</script>

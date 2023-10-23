@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="여행과 보따리">
+    <meta property="og:description" content="여행과 보따리">
+    <title>여행과 보따리</title>
+    <link rel="stylesheet" href="./css/base.css" id="stylesheet">
+    <link rel="stylesheet" href="./css/style_vietnam.css" id="stylesheet">
+    <link rel='stylesheet' href='./css/daterangepicker.css'>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src='./js/moment.min.js'></script>
+    <script src="./js/date-picker.js"></script>
+</head>
+
+<body>
+
+    <nav class="pc-menu">
+        <div class="container">
+            <a class="logo"></a>
+            <div class="util">
+                <div class="util-name">오늘도 <span>여</span><span>보</span> 하세요</div>
+                <div class="util-cover">
+                    <div class="total-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="hamburger-menu">
+                        <h6>안녕하세요 [<span>이준구</span>]님!</h6>
+                        <a><h6>커뮤니티</h6></a>
+                        <a><h6>로그아웃</h6></a>
+                    </div>
+                    </button>
+                    <div class="travel-img"><img src="./images/img-base.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+<div class="search-wrap">
+    <div class="container">
+        <div class="search-travel-column">
+            <div class="search-travel-wrap ">
+                <div class="search-travel">
+                    <div class="search-part part01" onclick="search(1)">
+                        <h6>여행지</h6>
+                        <h4 id="travelPlace">여행지 검색</h4>
+                    </div>
+                    <div class="search-part part02" onclick="search(2)">
+                        <h6>출국일</h6>
+                        <input type="text" id="start_date" placeholder="날짜 선택" readonly>
+                    </div>
+                    <div class="search-part part03" onclick="search(3)">
+                        <h6>귀국일</h6>
+                        <input type="text" id="end_date" placeholder="날짜 선택" readonly>
+                    </div>
+                    <div class="search-part part04" onclick="search(4)">
+                        <h6>항공사</h6>
+                        <h4 id="travelAir">항공사 선택</h4>
+                    </div>
+                    <div class="search-part part05" onclick="search(5)">
+                        <h6>목적</h6>
+                        <h4 id="travelPurpose">여행목적 선택</h4>
+                    </div>
+                    <div class="search-part part06" onclick="search(6)">
+                        <h6>인원</h6>
+                        <h4 id="travelCount">여행자 2명</h4>
+                    </div>
+                </div>
+                <button class="search-btn"></button>
+            </div>
+            
+            <!-- 여행지 선택 -->
+            <div class="travel-place travel-tap" id="travel01">
+                <button class="btn-close2" onclick="searchClose()"></button>
+                <div class="place-part">
+                    <h6>대한민국</h6>
+                    <ul>
+                        <li><a href="javascript:travelPlace('서울')"><span class="flag"><img src="./images/flag-kor.png" alt=""></span>서울</a></li>
+                        <li><a href="javascript:travelPlace('부산')"><span class="flag"><img src="./images/flag-kor.png" alt=""></span>부산</a></li>
+                        <li><a href="javascript:travelPlace('제주도')"><span class="flag"><img src="./images/flag-kor.png" alt=""></span>제주도</a></li>
+                    </ul>
+                </div>
+                <div class="place-part">
+                    <h6>일본</h6>
+                    <ul>
+                        <li><a href="javascript:travelPlace('도쿄')"><span class="flag"><img src="./images/flag-jp.png" alt=""></span>도쿄</a></li>
+                        <li><a href="javascript:travelPlace('오사카')"><span class="flag"><img src="./images/flag-jp.png" alt=""></span>오사카</a></li>
+                        <li><a href="javascript:travelPlace('훗카이도')"><span class="flag"><img src="./images/flag-jp.png" alt=""></span>훗카이도</a></li>
+                    </ul>
+                </div>
+                <div class="place-part">
+                    <h6>유럽</h6>
+                    <ul>
+                        <li><a href="javascript:travelPlace('아이슬란드-레이캬비크')"><span class="flag"><img src="./images/flag_iceland.png" alt=""></span>아이슬란드-레이캬비크</a></li>
+                        <li><a href="javascript:travelPlace('프랑스-파리')"><span class="flag"><img src="./images/flag-fr.png" alt=""></span>프랑스-파리</a></li>
+                        <li><a href="javascript:travelPlace('프랑스-마르세유')"><span class="flag"><img src="./images/flag-fr.png" alt=""></span>프랑스-마르세유</a></li>
+                        <li><a href="javascript:travelPlace('독일-뮌헨')"><span class="flag"><img src="./images/flag-ger.png" alt=""></span>독일-뮌헨</a></li>
+                        <li><a href="javascript:travelPlace('독일-베를린')"><span class="flag"><img src="./images/flag-ger.png" alt=""></span>독일-베를린</a></li>
+                        <li><a href="javascript:travelPlace('영국-런던')"><span class="flag"><img src="./images/flag-eng.png" alt=""></span>영국-런던</a></li>
+                        <li><a href="javascript:travelPlace('영국-멘체스터')"><span class="flag"><img src="./images/flag-eng.png" alt=""></span>영국-멘체스터</a></li>
+                        <li><a href="javascript:travelPlace('스페인-바르셀로나')"><span class="flag"><img src="./images/flag-spa.png" alt=""></span>스페인-바르셀로나</a></li>
+                    </ul>
+                </div>
+                <div class="place-part">
+                    <h6>동남아</h6>
+                    <ul>
+                        <li><a href="javascript:travelPlace('베트남-하노이')"><span class="flag"><img src="./images/flag-bet.png" alt=""></span>베트남-하노이</a></li>
+                        <li><a href="javascript:travelPlace('싱가포르-싱가포르')"><span class="flag"><img src="./images/flag-sin.png" alt=""></span>싱가포르-싱가포르</a></li>
+                        <li><a href="javascript:travelPlace('필리핀-세부')"><span class="flag"><img src="./images/flag-phi.png" alt=""></span>필리핀-세부</a></li>
+                        <li><a href="javascript:travelPlace('필리핀-보라카이')"><span class="flag"><img src="./images/flag-phi.png" alt=""></span>필리핀-보라카이</a></li>
+                        <li><a href="javascript:travelPlace('태국-방콕')"><span class="flag"><img src="./images/flag-tai.png" alt=""></span>태국-방콕</a></li>
+                    </ul>
+                </div>
+                <div class="place-part">
+                    <h6>북미</h6>
+                    <ul>
+                        <li><a href="javascript:travelPlace('미국-뉴욕')"><span class="flag"><img src="./images/flag-usa.png" alt=""></span>미국-뉴욕</a></li>
+                        <li><a href="javascript:travelPlace('미국-LA')"><span class="flag"><img src="./images/flag-usa.png" alt=""></span>미국-LA</a></li>
+                        <li><a href="javascript:travelPlace('미국-시애틀')"><span class="flag"><img src="./images/flag-usa.png" alt=""></span>미국-시애틀</a></li>
+                        <li><a href="javascript:travelPlace('캐나다-토론토')"><span class="flag"><img src="./images/flag-can.png" alt=""></span>캐나다-토론토</a></li>
+                        <li><a href="javascript:travelPlace('캐나다-퀘백')"><span class="flag"><img src="./images/flag-can.png" alt=""></span>캐나다-퀘백</a></li>
+                    </ul>
+                </div>
+                <div class="place-part">
+                    <h6>남미</h6>
+                    <ul>
+                        <li><a href="javascript:travelPlace('브라질-리우데자네이루')"><span class="flag"><img src="./images/flag-bra.png" alt=""></span>브라질-리우데자네이루</a></li>
+                        <li><a href="javascript:travelPlace('페루-쿠스코')"><span class="flag"><img src="./images/flag-per.png" alt=""></span>페루-쿠스코</a></li>
+                        <li><a href="javascript:travelPlace('아르헨티나-부에노스아리에스')"><span class="flag"><img src="./images/flag-arg.png" alt=""></span>아르헨티나-부에노스아리에스</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 출국일 선택 -->
+            <div class="travel-day travel-tap" id="travel02">
+                <button class="btn-close2" onclick="searchClose()"></button>
+                <div id="datepicker"></div>
+                <div class="period" id="period">
+                    <h5>기간선택</h5>
+                    <button class="period-btn" value="mon1">1개월</button>
+                    <button class="period-btn" value="mon3">3개월</button>
+                    <button class="period-btn" value="mon6">6개월</button>
+                    <button class="period-btn" value="mon9">9개월</button>
+                    <button class="period-btn" value="mon12">12개월</button>
+                    <button class="period-btn" value="custom">+</button>
+                </div>
+            </div>
+            
+            <!-- 항공사 선택 -->
+            <div class="travel-place travel-tap" id="travel04">
+                <button class="btn-close2" onclick="searchClose()"></button>
+                <div class="place-part line-5">
+                    <h6>대한민국</h6>
+                    <ul>
+                        <li><a href="javascript:travelAir('대한항공')">대한항공</a></li>
+                        <li><a href="javascript:travelAir('아시아나항공')">아시아나항공</a></li>
+                        <li><a href="javascript:travelAir('제주항공')">제주항공</a></li>
+                        <li><a href="javascript:travelAir('진에어')">진에어</a></li>
+                        <li><a href="javascript:travelAir('에어부산')">에어부산</a></li>
+                        <li><a href="javascript:travelAir('이스타항공')">이스타항공</a></li>
+                        <li><a href="javascript:travelAir('에어서울')">에어서울</a></li>
+                        <li><a href="javascript:travelAir('플라이강원')">플라이강원</a></li>
+                    </ul>
+                </div>
+                <div class="place-part line-5">
+                    <h6>아시아</h6>
+                    <ul>
+                        <li><a href="javascript:travelAir('일본항공')">일본항공</a></li>
+                        <li><a href="javascript:travelAir('카타르항공')">카타르항공</a></li>
+                        <li><a href="javascript:travelAir('에미레이트항공')">에미레이트항공</a></li>
+                        <li><a href="javascript:travelAir('타이항공')">타이항공</a></li>
+                        <li><a href="javascript:travelAir('베트남항공')">베트남항공</a></li>
+                        <li><a href="javascript:travelAir('ZIPAIR')">ZIPAIR</a></li>
+                        <li><a href="javascript:travelAir('제트 에어웨이즈')">제트 에어웨이즈</a></li>
+                        <li><a href="javascript:travelAir('상하이 항공')">상하이 항공</a></li>
+                    </ul>
+                </div>
+                <div class="place-part line-5">
+                    <h6>유럽</h6>
+                    <ul>
+                        <li><a href="javascript:travelAir('루프트한자 독일 항공')">루프트한자 독일 항공</a></li>
+                        <li><a href="javascript:travelAir('KLM네덜란드항공')">KLM네덜란드항공</a></li>
+                        <li><a href="javascript:travelAir('에어프랑스')">에어프랑스</a></li>
+                        <li><a href="javascript:travelAir('터키항공')">터키항공</a></li>
+                        <li><a href="javascript:travelAir('핀에어')">핀에어</a></li>
+                        <li><a href="javascript:travelAir('영국항공')">영국항공</a></li>
+                        <li><a href="javascript:travelAir('LOT폴란드 항공')">LOT폴란드 항공</a></li>
+                        <li><a href="javascript:travelAir('이탈리아 항공운수')">이탈리아 항공운수</a></li>
+                    </ul>
+                </div>
+                <div class="place-part line-5">
+                    <h6>아메리카</h6>
+                    <ul>
+                        <li><a href="javascript:travelAir('델타 항공')">델타 항공</a></li>
+                        <li><a href="javascript:travelAir('아메리칸 항공')">아메리칸 항공</a></li>
+                        <li><a href="javascript:travelAir('유나이티드항공')">유나이티드항공</a></li>
+                        <li><a href="javascript:travelAir('알래스카항공')">알래스카항공</a></li>
+                        <li><a href="javascript:travelAir('LACSA 항공')">LACSA 항공</a></li>
+                        <li><a href="javascript:travelAir('내셔널 항공')">내셔널 항공</a></li>
+                        <li><a href="javascript:travelAir('하와이안 항공')">하와이안 항공</a></li>
+                        <li><a href="javascript:travelAir('호라이즌 항공')">호라이즌 항공</a></li>
+                    </ul>
+                </div>
+                <div class="place-part line-5">
+                    <h6>아프리카</h6>
+                    <ul>
+                        <li><a href="javascript:travelAir('르완다 에어')">르완다 에어</a></li>
+                        <li><a href="javascript:travelAir('실버백 카고 항공')">실버백 카고 항공</a></li>
+                        <li><a href="javascript:travelAir('에어 알제리')">에어 알제리</a></li>
+                        <li><a href="javascript:travelAir('리비아 항공')">리비아 항공</a></li>
+                        <li><a href="javascript:travelAir('이집트 항공')">이집트 항공</a></li>
+                        <li><a href="javascript:travelAir('에어 나미비아')">에어 나미비아</a></li>
+                        <li><a href="javascript:travelAir('남아프리카 항공')">남아프리카 항공</a></li>
+                        <li><a href="javascript:travelAir('에어 마다가스카르')">에어 마다가스카르</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <!-- 목적 선택 -->
+            <div class="travel-purpose travel-tap" id="travel05">
+                <button class="btn-close2" onclick="searchClose()"></button>
+                <a href="javascript:travelPurpose('개인')" class="purpose-part">
+                    <img src="./images/purpose01.svg" alt="">
+                    <h6>개인</h6>
+                </a>
+                <a href="javascript:travelPurpose('하니문')" class="purpose-part">
+                    <img src="./images/purpose02.svg" alt="">
+                    <h6>하니문</h6>
+                </a>
+                <a href="javascript:travelPurpose('가족여행')" class="purpose-part">
+                    <img src="./images/purpose03.svg" alt="">
+                    <h6>가족여행</h6>
+                </a>
+                <a href="javascript:travelPurpose('골프투어')" class="purpose-part">
+                    <img src="./images/purpose04.svg" alt="">
+                    <h6>골프투어</h6>
+                </a>
+                <a href="javascript:travelPurpose('비즈니스')" class="purpose-part">
+                    <img src="./images/purpose05.svg" alt="">
+                    <h6>비즈니스</h6>
+                </a>
+            </div>
+            
+            <!-- 인원 선택 -->
+            <div class="travel-count travel-tap" id="travel06">
+                <button class="btn-close2" onclick="searchClose()"></button>
+                <div class="count">
+                    <div class="count-title">
+                        <h4>성인</h4>
+                        <p>14세 이상</p>
+                    </div>
+                    <div class="count-part">
+                        <button class="minus act"></button>
+                        <h3 id="adult">2</h3>
+                        <button class="plus act"></button>
+                    </div>
+                </div>
+                <div class="count">
+                    <div class="count-title">
+                        <h4>어린이</h4>
+                        <p>2~13세</p>
+                    </div>
+                    <div class="count-part">
+                        <button class="minus"></button>
+                        <h3 id="child">0</h3>
+                        <button class="plus act"></button>
+                    </div>
+                </div>
+                <div class="count">
+                    <div class="count-title">
+                        <h4>유아</h4>
+                        <p>2세 미만</p>
+                    </div>
+                    <div class="count-part">
+                        <button class="minus"></button>
+                        <h3 id="kid">0</h3>
+                        <button class="plus act"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+
+
+<script>
+$(document).ready(function() {
+    $('.minus').click(function () {
+        var $input = $(this).parent().find('h3');
+        var count = parseInt($input.text()) - 1;
+        count = count < 1 ? 1 : count;
+        if(count == 1) $(this).parent().find('.minus').removeClass('act');
+        $input.text(count);
+        $input.change();
+        travelCount();
+        return false;
+    });
+    $('.plus').click(function () {
+        var $input = $(this).parent().find('h3');
+        $input.text(parseInt($input.text()) + 1);
+        $(this).parent().find('.minus').addClass('act');
+        $input.change();
+        travelCount();
+        return false;
+    });
+    $('.search-btn').click(function () {
+        var destination  = $('#travelPlace').text();
+        var domainUrl = window.location.origin;
+        if(destination === '아이슬란드-레이캬비크') {
+            window.location.href = domainUrl + '/category_step1_iceland.html';
+        }
+        else if(destination === '베트남-하노이') {
+            window.location.href = domainUrl + '/category_step2_vietnam.html';
+        }
+        else {
+            return;
+        }
+    });
+
+    $('.total-menu, .travel-img').click(function(){
+		$('.total-menu, .util-cover').toggleClass('open');
+        $('.hamburger-menu').toggleClass('open');
+	});
+});
+function travelCount() {
+    var adultCount = Number($('#adult').text());
+    var childCount = Number($('#child').text());
+    var kidCount = Number($('#kid').text());
+    var total = adultCount+childCount+kidCount;
+    $('#travelCount').text('여행자 '+total+'명');
+}
+function travelPlace(txt) {
+    $('#travelPlace').text(txt);
+    search(2);
+}
+function travelAir(txt) {
+    $('#travelAir').text(txt);
+    search(5);
+}
+function travelPurpose(txt) {
+    $('#travelPurpose').text(txt);
+    search(6);
+}
+function search(num) {
+    $('.travel-tap,.search-part').removeClass('act');
+    if(num == 1) $('#travel01,.part01').addClass('act');
+    else if(num == 2) $('#travel02,.part02').addClass('act');
+    else if(num == 3) $('#travel02,.part03').addClass('act');
+    else if(num == 4) $('#travel04,.part04').addClass('act');
+    else if(num == 5) $('#travel05,.part05').addClass('act');
+    else if(num == 6) $('#travel06,.part06').addClass('act');
+    $('.search-travel-wrap').addClass('act');
+}
+function searchClose() {
+    $('.travel-tap,.search-part,.search-travel-wrap').removeClass('act');
+}
+</script>
