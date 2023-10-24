@@ -330,10 +330,10 @@ $(document).ready(function() {
     $('.search-btn').click(function () {
         var destination  = $('#travelPlace').text();
         if(destination === '아이슬란드-레이캬비크') {
-            window.location.href = domainUrl + '/static/category_step1_iceland.html';
+            window.location.href = domainUrl + '/category_step1_iceland.html';
         }
         else if(destination === '베트남-하노이') {
-            window.location.href = domainUrl + '/static/category_step2_vietnam.html';
+            window.location.href = domainUrl + '/category_step2_vietnam.html';
         }
         else {
             return;
@@ -346,7 +346,7 @@ $(document).ready(function() {
 	});
 
     $('#link-community').on('click', function() {
-        window.location.href = domainUrl + '/static/community.html';
+        window.location.href = domainUrl + '/community.html';
     }); 
 });
 function travelCount() {
