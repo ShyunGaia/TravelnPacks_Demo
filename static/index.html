@@ -36,7 +36,7 @@
                     </div>
                     <div class="hamburger-menu">
                         <h6>안녕하세요 [<span>이준구</span>]님!</h6>
-                        <a><h6>커뮤니티</h6></a>
+                        <a id="link-community"><h6>커뮤니티</h6></a>
                         <a><h6>로그아웃</h6></a>
                     </div>
                     </button>
@@ -74,7 +74,7 @@
                     </div>
                     <div class="search-part part06" onclick="search(6)">
                         <h6>인원</h6>
-                        <h4 id="travelCount">여행자 2명</h4>
+                        <h4 id="travelCount">여행자 0명</h4>
                     </div>
                 </div>
                 <button class="search-btn"></button>
@@ -262,8 +262,8 @@
                         <p>14세 이상</p>
                     </div>
                     <div class="count-part">
-                        <button class="minus act"></button>
-                        <h3 id="adult">2</h3>
+                        <button class="minus"></button>
+                        <h3 id="adult">0</h3>
                         <button class="plus act"></button>
                     </div>
                 </div>
@@ -301,11 +301,19 @@
 
 <script>
 $(document).ready(function() {
+
+    var domainUrl = window.location.origin;
+
     $('.minus').click(function () {
         var $input = $(this).parent().find('h3');
-        var count = parseInt($input.text()) - 1;
-        count = count < 1 ? 1 : count;
-        if(count == 1) $(this).parent().find('.minus').removeClass('act');
+        var count = parseInt($input.text());
+        count = count < 1 ? 0 : count;
+        if(count == 0) {
+            $(this).parent().find('.minus').removeClass('act');
+        }
+        else {
+            count -= 1;
+        }
         $input.text(count);
         $input.change();
         travelCount();
@@ -321,12 +329,11 @@ $(document).ready(function() {
     });
     $('.search-btn').click(function () {
         var destination  = $('#travelPlace').text();
-        var domainUrl = window.location.origin;
         if(destination === '아이슬란드-레이캬비크') {
-            window.location.href = domainUrl + '/category_step1_iceland.html';
+            window.location.href = domainUrl + '/static/category_step1_iceland.html';
         }
         else if(destination === '베트남-하노이') {
-            window.location.href = domainUrl + '/category_step2_vietnam.html';
+            window.location.href = domainUrl + '/static/category_step2_vietnam.html';
         }
         else {
             return;
@@ -337,6 +344,10 @@ $(document).ready(function() {
 		$('.total-menu, .util-cover').toggleClass('open');
         $('.hamburger-menu').toggleClass('open');
 	});
+
+    $('#link-community').on('click', function() {
+        window.location.href = domainUrl + '/static/community.html';
+    }); 
 });
 function travelCount() {
     var adultCount = Number($('#adult').text());

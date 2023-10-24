@@ -773,6 +773,7 @@ nav.pc-menu .logo{
     height: 36px;
     background: url(../images/logo.svg) 50% no-repeat;
     box-sizing: border-box;
+    cursor: pointer;
 }
 nav.pc-menu .util{
     display: flex;

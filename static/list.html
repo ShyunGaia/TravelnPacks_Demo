@@ -35,7 +35,7 @@
                     </div>
                     <div class="hamburger-menu">
                         <h6>안녕하세요 [<span>이준구</span>]님!</h6>
-                        <a><h6>커뮤니티</h6></a>
+                        <a id="link-community"><h6>커뮤니티</h6></a>
                         <a><h6>로그아웃</h6></a>
                     </div>
                     </button>
@@ -1150,7 +1150,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a>
                 <div class="list-img"><img src="./images/carrier_11.jpg" alt=""></div>
                 <div class="list-txt">
                     <h5>Samsonite MINTER</h5>
@@ -1163,7 +1163,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a>
                 <div class="list-img"><img src="./images/carrier_2.jpg" alt=""></div>
                 <div class="list-txt">
                     <h5>NG N6501P8 28형 20형 여행용 캐리어</h5>
@@ -1176,7 +1176,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a>
                 <div class="list-img"><img src="./images/carrier_3.jpg" alt=""></div>
                 <div class="list-txt">
                     <h5>프리미엄 여행용캐리어 28인치<br/>수화물용 SM-C628N 딥블랙</h5>
@@ -1194,7 +1194,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a>
                 <div class="list-img"><img src="./images/carrier_4.jpg" alt=""></div>
                 <div class="list-txt">
                     <h5>미니캐리어 여행용 레디백 14인치 크림화이트</h5>
@@ -1212,7 +1212,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a>
                 <div class="list-img"><img src="./images/carrier_5.jpg" alt=""></div>
                 <div class="list-txt">
                     <h5>오픈형 컵홀더 20 24형 여행용 기내용 캐리어</h5>
@@ -1229,7 +1229,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a>
                 <div class="list-img"><img src="./images/carrier_6.jpg" alt=""></div>
                 <div class="list-txt">
                     <h5>여행용 프리미엄 방탄캐리어 The 루미나<br/>28인치 아이보리 화이트</h5>
@@ -1246,7 +1246,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a>
                 <div class="list-img"><img src="./images/carrier_7.jpg" alt=""></div>
                 <div class="list-txt">
                     <h5>더플 RG 85리터 여행용 방수 캐리어 </h5>
@@ -1263,7 +1263,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a>
                 <div class="list-img"><img src="./images/carrier_8.jpg" alt=""></div>
                 <div class="list-txt">
                     <h5>아이레 20 26인치 PC 캐리어<br/>여행용 기내용 수화물</h5>
@@ -1276,7 +1276,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a>
                 <div class="list-img"><img src="./images/carrier_9.jpg" alt=""></div>
                 <div class="list-txt">
                     <h5>여행용캐리어 글라이드 IS-A926<br/>26인치 수화물용 샴페인골드</h5>
@@ -1289,7 +1289,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a>
                 <div class="list-img"><img src="./images/carrier_10.jpg" alt=""></div>
                 <div class="list-txt">
                     <h5>메탈 클래식 20 24 29형<br/>여행용 기내용 캐리어</h5>
@@ -1302,7 +1302,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a>
                 <div class="list-img"><img src="./images/carrier_12.jpg" alt=""></div>
                 <div class="list-txt">
                     <h5>Samsonite UPSCAPE</h5>
@@ -1360,11 +1360,11 @@ $(document).ready(function(){
    });
 
    $('.logo').on('click', function () {
-        window.location.href = domainUrl + '/index.html';
+        window.location.href = domainUrl + '/static/index.html';
     });
 
     $('#link_detail').on('click', function () {
-        window.location.href = domainUrl + '/detail.html';
+        window.location.href = domainUrl + '/static/detail.html';
     });
 
     setInterval(updateClock, 1000);
@@ -1388,9 +1388,12 @@ $(document).ready(function(){
 	});
 
     $('.basket-go').on('click', function () {
-        window.location.href = domainUrl + '/category_step2_vietnam.html';
+        window.location.href = domainUrl + '/static/category_step2_vietnam.html';
     });
 
+    $('#link-community').on('click', function() {
+        window.location.href = domainUrl + '/static/community.html';
+    }); 
 });
 
 function updateClock() {

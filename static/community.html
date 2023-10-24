@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="여행과 보따리">
+    <meta property="og:description" content="여행과 보따리">
+    <title>여행과 보따리</title>
+    <link rel="stylesheet" href="./css/base.css" id="stylesheet">
+    <link rel="stylesheet" href="./css/style_vietnam.css" id="stylesheet">
+    <link rel='stylesheet' href='./css/daterangepicker.css'>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="light-grey">
+
+    <nav class="pc-menu">
+        <div class="container">
+            <a class="logo"></a>
+            <div class="util">
+                <div class="util-name">오늘도 <span>여</span><span>보</span> 하세요</div>
+                <div class="util-cover">
+                    <div class="total-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="hamburger-menu">
+                        <h6>안녕하세요 [<span>이준구</span>]님!</h6>
+                        <a id="link-community"><h6>커뮤니티</h6></a>
+                        <a><h6>로그아웃</h6></a>
+                    </div>
+                    </button>
+                    <div class="travel-img"><img src="./images/img-base.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="community-container">
+
+        <!-- Back to top button -->
+        <a id="top-button"></a>
+
+        <ul>
+            <li>
+                <a>
+                    <div class="ribbon-wrapper">
+                        <div class="glow">&nbsp;</div>
+                        <div class="ribbon-front-item">
+                            BEST 상품후기
+                        </div>
+                        <div class="ribbon-edge-topleft-item"></div>
+                        <div class="ribbon-edge-topright-item"></div>
+                        <div class="ribbon-edge-bottomleft-item"></div>
+                        <div class="ribbon-edge-bottomright-item"></div>
+                    </div>
+                    <div class="list-img"><img src="./images/best_review_item.jpg" alt=""></div>
+                    <div class="list-txt">
+                        <h5>로우로우 내돈내산 리얼후기!</h5>
+                        <div class="list-money-wrap">
+                            <div class="list-money">
+                                <span>
+                                    챙길게 많아진 가방은 점점 크기가 커졌고<br/>
+                                    사람이 들기엔 너무 무거웠던 차에 보인<br/>
+                                    로우로우...
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="ribbon-wrapper">
+                        <div class="glow">&nbsp;</div>
+                        <div class="ribbon-front-travel">
+                            BEST 여행후기
+                        </div>
+                        <div class="ribbon-edge-topleft-travel"></div>
+                        <div class="ribbon-edge-topright-travel"></div>
+                        <div class="ribbon-edge-bottomleft-travel"></div>
+                        <div class="ribbon-edge-bottomright-travel"></div>
+                    </div>
+                    <div class="list-img"><img src="./images/best_review_travel.jpg" alt=""></div>
+                    <div class="list-txt">
+                        <h5>드디어 나트랑에 내가 왔다</h5>
+                        <div class="list-money-wrap">
+                            <div class="list-money">
+                                <span>
+                                    베트남의 나폴리로 불리는 여행지,나트랑!<br/>
+                                    이 글을 보시고 계신 여러분은 나트랑 여행을 준비중이시겠죠?
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="ribbon-wrapper">
+                        <div class="glow">&nbsp;</div>
+                        <div class="ribbon-front-design">
+                            BEST 디자인
+                        </div>
+                        <div class="ribbon-edge-topleft-design"></div>
+                        <div class="ribbon-edge-topright-design"></div>
+                        <div class="ribbon-edge-bottomleft-design"></div>
+                        <div class="ribbon-edge-bottomright-design"></div>
+                    </div>
+                    <div class="list-img"><img src="./images/best_review_design.jpg" alt=""></div>
+                    <div class="list-txt">
+                        <h5>국가별 골프백 네임택</h5>
+                        <div class="list-money-wrap">
+                            <div class="list-money">
+                                <span>
+                                    #네임택 #캐디백 #골프백 #캐리어<br/>
+                                    안녕하세요 🤗 이번 시즌에는 네임택으로...
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="ribbon-wrapper">
+                        <div class="glow">&nbsp;</div>
+                        <div class="ribbon-front-post">
+                            BEST 게시글
+                        </div>
+                        <div class="ribbon-edge-topleft-post"></div>
+                        <div class="ribbon-edge-topright-post"></div>
+                        <div class="ribbon-edge-bottomleft-post"></div>
+                        <div class="ribbon-edge-bottomright-post"></div>
+                    </div>
+                    <div class="list-img"><img src="./images/best_review_post.jpg" alt=""></div>
+                    <div class="list-txt">
+                        <h5>간사이 공항에서 JR하루카로<br/>나라사슴공원 가는 법</h5>
+                        <div class="list-money-wrap">
+                            <div class="list-money">
+                                <span>
+                                    저번 포스트에 이어서 이번에는<br/>
+                                    최단거리로 사슴공원까지 가보겠습니다...
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <hr class="style17">
+    </div>
+
+    <div class="list-style-posts">
+        <div class="post-item">
+            <ul>
+                <li>
+                    <div class="post-category">
+                        <h4>상품 후기</h4>
+                        <span>더 많은 글 보기</span>    
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                        <span>2023/10/24 09:45 | 조회:23 | 추천: 3 | 댓글: 0</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Cras feugiat ex a justo facilisis feugiat.</a>
+                        <span>2023/10/24 09:32 | 조회:31 | 추천: 0 | 댓글: 3</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Donec vel congue odio.</a>
+                        <span>2023/10/24 09:27 | 조회:52 | 추천: 5 | 댓글: 11</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Proin accumsan est consequat dignissim dignissim.</a>
+                        <span>2023/10/24 09:00 | 조회:3 | 추천: 0 | 댓글: 0</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Fusce at ligula placerat</a>
+                        <span>2023/10/24 08:19 | 조회:0 | 추천: 0 | 댓글: 1</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Cras non mollis enim. Praesent eget nisl semper</a>
+                        <span>2023/10/24 07:45 | 조회:7 | 추천: 2 | 댓글: 0</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="post-travel">
+            <ul>
+                <li>
+                    <div class="post-category">
+                        <h4>여행 후기</h4>
+                        <span>더 많은 글 보기</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                        <span>2023/10/24 10:18 | 조회:9 | 추천: 2 | 댓글: 1</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Cras feugiat ex a justo facilisis feugiat.</a>
+                        <span>2023/10/24 07:00 | 조회:23 | 추천: 1 | 댓글: 3</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Donec vel congue odio.</a>
+                        <span>2023/10/23 19:27 | 조회:77 | 추천: 8 | 댓글: 13</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Proin accumsan est consequat dignissim dignissim.</a>
+                        <span>2023/10/20 15:36 | 조회:123 | 추천: 9 | 댓글: 22</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Fusce at ligula placerat</a>
+                        <span>2023/10/19 21:26 | 조회:226 | 추천: 17 | 댓글: 32</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Cras non mollis enim. Praesent eget nisl semper</a>
+                        <span>2023/10/19 04:13 | 조회:186 | 추천: 5 | 댓글: 12</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="post-design">
+            <ul>
+                <li>
+                    <div class="post-category">
+                        <h4>디자인 공방</h4>
+                        <span>더 많은 글 보기</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                        <span>2023/10/20 17:13 | 조회:299 | 추천: 87 | 댓글: 99</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Cras feugiat ex a justo facilisis feugiat.</a>
+                        <span>2023/09/02 08:16 | 조회:542 | 추천: 146 | 댓글: 397</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Donec vel congue odio.</a>
+                        <span>2023/08/13 22:38 | 조회:1294 | 추천: 99 | 댓글: 255</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Proin accumsan est consequat dignissim dignissim.</a>
+                        <span>2023/07/01 18:46 | 조회:3222 | 추천: 425 | 댓글: 213</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Fusce at ligula placerat</a>
+                        <span>2023/06/05 07:22 | 조회:4125 | 추천: 56 | 댓글: 23</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Cras non mollis enim. Praesent eget nisl semper</a>
+                        <span>2023/06/01 23:23 | 조회:5049 | 추천: 801 | 댓글: 409</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="post-blog">
+            <ul>
+                <li>
+                    <div class="post-category">
+                        <h4>자유 게시판</h4>
+                        <span>더 많은 글 보기</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                        <span>2023/10/24 10:24 | 조회:88 | 추천: 3 | 댓글: 9</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Cras feugiat ex a justo facilisis feugiat.</a>
+                        <span>2023/10/24 10:24 | 조회:92 | 추천: 5 | 댓글: 12</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Donec vel congue odio.</a>
+                        <span>2023/10/24 10:23 | 조회:108 | 추천: 13 | 댓글: 15</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Proin accumsan est consequat dignissim dignissim.</a>
+                        <span>2023/10/24 10:21 | 조회:88 | 추천: 7 | 댓글: 32</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Fusce at ligula placerat</a>
+                        <span>2023/10/24 10:20 | 조회:92 | 추천: 12 | 댓글: 27</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-title">
+                        <a>Cras non mollis enim. Praesent eget nisl semper</a>
+                        <span>2023/10/24 10:20 | 조회:156 | 추천: 30 | 댓글: 52</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <hr class="style17">
+    </div>
+
+    <div class="list">
+        <div class="list-title">
+            <h4>많은 분들이 최근 눈여겨 보고 있어요!</h4>
+        </div>
+        <ul>
+            <li id="link_detail">
+                <a>
+                    <div class="list-img"><img src="./images/hot_item_1.jpg" alt=""></div>
+                    <div class="list-txt">
+                        <h5>EMBORIDERY DAN COLLARLESS QUILTING FLEECE JACKET IVORY</h5>
+                        <div class="list-money-wrap">
+                            <div class="list-money">
+                                <span class="strike">59,000</span>
+                                <span>47,000</span>
+                            </div>
+                            <div class="list-sale">
+                                <span>17%</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="list-img"><img src="./images/hot_item_2.jpg" alt=""></div>
+                    <div class="list-txt">
+                        <h5>[LG트윈스] 빈티지 바시티 자켓_네이비</h5>
+                        <div class="list-money-wrap">
+                            <div class="list-money">
+                                <span>179,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="list-img"><img src="./images/carrier_4.jpg" alt=""></div>
+                    <div class="list-txt">
+                        <h5>미니캐리어 여행용 레디백 14인치 크림화이트</h5>
+                        <div class="list-money-wrap">
+                            <div class="list-money">
+                                <span class="strike">75,000</span>
+                                <span>20,000</span>
+                            </div>
+                            <div class="list-sale">
+                                <span class="icon clear">클리어런스</span>
+                                <span>73%</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="list-img"><img src="./images/carrier_5.jpg" alt=""></div>
+                    <div class="list-txt">
+                        <h5>오픈형 컵홀더 20 24형 여행용 기내용 캐리어</h5>
+                        <div class="list-money-wrap">
+                            <div class="list-money">
+                                <span class="strike">190,000</span>
+                                <span>99,000</span>
+                            </div>
+                            <div class="list-sale">
+                                <span>48%</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="list-img"><img src="./images/hot_item_3.jpg" alt=""></div>
+                    <div class="list-txt">
+                        <h5>XT-6 마인드풀 2 - 팔콘:아몬드 밀크:<br/>브라이트 그린 / L47312000</h5>
+                        <div class="list-money-wrap">
+                            <div class="list-money">
+                                <span>260,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="list-img"><img src="./images/hot_item_4.jpg" alt=""></div>
+                    <div class="list-txt">
+                        <h5>2in1 도킹형 미니 보조배터리 5000mAh<br/> C타입 8핀 동시충전</h5>
+                        <div class="list-money-wrap">
+                            <div class="list-money">
+                                <span class="strike">27,900</span>
+                                <span>25,100</span>
+                            </div>
+                            <div class="list-sale">
+                                <span class="icon new">NEW</span>
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="list-img"><img src="./images/hot_item_5.jpg" alt=""></div>
+                    <div class="list-txt">
+                        <h5>인스탁스 미니12+케이스+필름이벤트</h5>
+                        <div class="list-money-wrap">
+                            <div class="list-money">
+                                <span class="strike">137,000</span>
+                                <span>116,450</span>
+                            </div>
+                            <div class="list-sale">
+                                <span>15%</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="list-img"><img src="./images/hot_item_6.jpg" alt=""></div>
+                    <div class="list-txt">
+                        <h5>스토리로고 롱 머플러 비비드 블루</h5>
+                        <div class="list-money-wrap">
+                            <div class="list-money">
+                                <span>36,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
+
+
+<script>
+$(document).ready(function(){
+    var domainUrl = window.location.origin;
+    var tBtn = $('#top-button');
+ 
+   $('.logo').on('click', function () {
+        window.location.href = domainUrl + '/static/index.html';
+    });
+
+    $('.total-menu, .travel-img').click(function(){
+		$('.total-menu, .util-cover').toggleClass('open');
+        $('.hamburger-menu').toggleClass('open');
+	});
+
+    $('#link-community').on('click', function() {
+        window.location.href = domainUrl + '/static/community.html';
+    }); 
+
+    $(document).scroll(function() {
+        if ( $(document).scrollTop() > 300) {
+            tBtn.addClass('show');
+        } else {
+            tBtn.removeClass('show');
+        }
+    });
+    tBtn.on('click', function(e) {
+        e.preventDefault();
+        $('html, .community-container').animate({scrollTop:0}, '300');
+    });
+});
+</script>

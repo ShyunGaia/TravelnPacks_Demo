@@ -36,7 +36,7 @@
                 </div>
                 <div class="hamburger-menu">
                     <h6>안녕하세요 [<span>이준구</span>]님!</h6>
-                    <a><h6>커뮤니티</h6></a>
+                    <a id="link-community"><h6>커뮤니티</h6></a>
                     <a><h6>로그아웃</h6></a>
                 </div>
                 </button>
@@ -1194,10 +1194,10 @@
     <div class="detail-body">
         <div class="detail-body-tap">
             <ul>
-                <li class="on"><a href="#">DETAIL</a></li>
-                <li><a href="#">RETURN & DELIVERY</a></li>
-                <li><a href="#">REVIEW 8</a></li>
-                <li><a href="#">Q & A 8</a></li>
+                <li class="on"><a>DETAIL</a></li>
+                <li><a>RETURN & DELIVERY</a></li>
+                <li><a>REVIEW 8</a></li>
+                <li><a>Q & A 8</a></li>
             </ul>
         </div>
         <div class="detail-body-content">
@@ -1364,7 +1364,7 @@ $(document).ready(function(){
     });
 
     $('.logo').on('click', function () {
-        window.location.href = domainUrl + '/index.html';
+        window.location.href = domainUrl + '/static/index.html';
     });
 
     setInterval(updateClock, 1000);
@@ -1390,7 +1390,7 @@ $(document).ready(function(){
         }
     });
     lBtn.on('click', function() {
-        window.location.href = domainUrl + '/list.html';
+        window.location.href = domainUrl + '/static/list.html';
     });
 
     $('.btn-basket').on('click', function(e) {
@@ -1413,8 +1413,12 @@ $(document).ready(function(){
 	});
 
     $('.basket-go').on('click', function () {
-        window.location.href = domainUrl + '/category_step2_vietnam.html';
+        window.location.href = domainUrl + '/static/category_step2_vietnam.html';
     });
+
+    $('#link-community').on('click', function() {
+        window.location.href = domainUrl + '/static/community.html';
+    }); 
 });
 
 function updateClock() {

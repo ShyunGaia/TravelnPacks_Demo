@@ -35,7 +35,7 @@
                     </div>
                     <div class="hamburger-menu">
                         <h6>안녕하세요 [<span>이준구</span>]님!</h6>
-                        <a><h6>커뮤니티</h6></a>
+                        <a id="link-community"><h6>커뮤니티</h6></a>
                         <a><h6>로그아웃</h6></a>
                     </div>
                     </button>
@@ -1140,13 +1140,13 @@
     <div class="category-contents">
         <ul>
             <li>
-                <a href="#">
+                <a>
                     <div class="cate-img"><img src="./images/shirts.jpg" alt=""></div>
                     <div class="cate-txt">의류</div>
                 </a>
             </li>
             <li>
-                <!-- <a href="#"> -->
+                <!-- <a> -->
                     <div id="link-detail">
                         <div class="cate-img"><img src="./images/carrier.jpg" alt=""></div>
                         <div class="cate-txt">캐리어</div>
@@ -1154,61 +1154,61 @@
                 <!-- </a> -->
             </li>
             <li>
-                <a href="#">
+                <a>
                     <div class="cate-img"><img src="./images/boston_bag.jpg" alt=""></div>
                     <div class="cate-txt">가방</div>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a>
                     <div class="cate-img"><img src="./images/spary.jpg" alt=""></div>
                     <div class="cate-txt">여행용품</div>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a>
                     <div class="cate-img"><img src="./images/sun_glass.jpg" alt=""></div>
                     <div class="cate-txt">선글라스</div>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a>
                     <div class="cate-img"><img src="./images/sun_cream.jpg" alt=""></div>
                     <div class="cate-txt">화장품</div>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a>
                     <div class="cate-img"><img src="./images/sandals.jpg" alt=""></div>
                     <div class="cate-txt">신발</div>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a>
                     <div class="cate-img"><img src="./images/luggage_tag.jpg" alt=""></div>
                     <div class="cate-txt">액세서리</div>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a>
                     <div class="cate-img"><img src="./images/cap.jpg" alt=""></div>
                     <div class="cate-txt">모자</div>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a>
                     <div class="cate-img"><img src="./images/swim_pants.jpg" alt=""></div>
                     <div class="cate-txt">수영복</div>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a>
                     <div class="cate-img"><img src="./images/water_proof_pack.jpg" alt=""></div>
                     <div class="cate-txt">물놀이용품</div>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a>
                     <div class="cate-img"><img src="./images/smart_tag.jpg" alt=""></div>
                     <div class="cate-txt">스마트 장비</div>
                 </a>
@@ -1278,11 +1278,11 @@ $(document).ready(function(){
     });
 
     $('#link-detail').click(function () {
-        window.location.href = domainUrl + '/list.html';
+        window.location.href = domainUrl + '/static/list.html';
     });
 
     $('.logo').on('click', function () {
-        window.location.href = domainUrl + '/index.html';
+        window.location.href = domainUrl + '/static/index.html';
     });
 
     $('.total-menu, .travel-img').click(function(){
@@ -1293,6 +1293,10 @@ $(document).ready(function(){
     $('.basket-go').on('click', function () {
         $('.nation').addClass('close');
     });
+
+    $('#link-community').on('click', function() {
+        window.location.href = domainUrl + '/static/community.html';
+    }); 
 });
 
 function updateClock() {
