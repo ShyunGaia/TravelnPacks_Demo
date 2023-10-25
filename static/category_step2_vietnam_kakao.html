@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="여행과 보따리">
+    <meta property="og:description" content="여행과 보따리">
+    <title>여행과 보따리</title>
+    <link rel="stylesheet" href="./css/base.css" id="stylesheet">
+    <link rel="stylesheet" href="./css/style_vietnam.css" id="stylesheet">
+    <link rel='stylesheet' href='./css/daterangepicker.css'>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="light-grey">
+
+    
+<div class="kakao-nation step2">
+    <div class="kakao-nation-contents">
+        <table>
+            <tr>
+                <td>
+                    <div class="kakao-nation-summary">
+
+                        <h4>
+                            SUMMARY
+                        </h4>
+
+                        <div class="kakao-nation-caution-wrap step2">
+                            <div class="kakao-nation-caution">
+                                <span></span>
+                            </div>
+                            <h4>여행자제
+                                <span>국내 대도시보다 <br/>매우 높은 수준의 위험</span>
+                            </h4>
+                        </div>
+                        <div class="kakao-time-wrapper">
+                            <div class="kakao-time-local">
+                                <ul>
+                                    <li>
+                                        <i></i>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h6>현지시간<br/><span id="localT"></span></h6>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="kakao-time-korea">
+                                <ul>
+                                    <li>
+                                        <i></i>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h6>한국시간<br/><span id="rokT"></span></h6>
+                                    </li>
+                                </ul>        
+                            </div>
+                        </div>
+                        
+                        <div class="kakao-nation-temp">
+                            <div class="kakao-temp-hot">
+                                <i></i>
+                                <h6>여행기간동안 예상되는 최고기온은 <span>31°C</span></h6>
+                            </div>
+                            <div class="kakao-temp-cold">
+                                <i></i>
+                                <h6>여행기간동안 예상되는 최저기온은 <span>24°C</span></h6>
+                            </div>
+                        </div>
+
+                        <div class="kakao-nation-weather">
+                            <ul>
+                                <li>
+                                    <i></i>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>여행기간동안 맑은날씨는&nbsp;&nbsp;&nbsp;&nbsp;<span>2일</span></h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>여행기간동안 비는&nbsp;&nbsp;&nbsp;&nbsp;<span>86.0mm</span></h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>여행기간동안 눈은&nbsp;&nbsp;&nbsp;&nbsp;<span>0mm</span></h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>&nbsp;</h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>베트남은 열대기후로 습도가 높아요.</h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>이준구님께&nbsp;&nbsp;&nbsp;<span>매쉬소재의 시원한 셔츠</span>와 <span>뿌리는 모기 기피제</span>를 추천드릴게요!</h6>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="kakao-remind-info">
+                            <div class="kakao-passport-expire">
+                                <ul>
+                                    <li>
+                                        <i></i>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h6>여권 만료까지<br/><span>D-78</span></h6>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h6>비자 만료까지<br/><span>D-14</span></h6>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="kakao-emergency-contact">
+                                <ul>
+                                    <li>
+                                        <i></i>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h6>대사관 연락처:<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span>(84) 2437710404</span></h6>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h6>사건사고 긴급 연락처:<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span>(84) 904026126</span></h6>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h6>경찰:&nbsp;&nbsp;&nbsp;&nbsp;<span>113</span></h6>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h6>응급실:&nbsp;&nbsp;&nbsp;&nbsp;<span>115</span></h6>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                        <div class="kakao-airport">
+                            <ul>
+                                <li>
+                                    <i></i>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>국제공항:<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span>노이바이 국제공항 / CẢNG HÀNG KHÔNG QUỐC TẾ NỘI BÀI</span></h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>분실물 보관소:&nbsp;&nbsp;&nbsp;&nbsp;<span>로비 E</span></h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>분실문 관련 문의:&nbsp;&nbsp;&nbsp;&nbsp;<span>0983774546</span></h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h6>WIFI:&nbsp;&nbsp;&nbsp;&nbsp;<span>Noi Bai Airport Free Wi-Fi / App 다운로드 필요</span></h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>                                
+                                    <div>
+                                        <button class="kakao-map-airport" onclick="window.open('https\://vietnamairport.vn/noibaiairport/picture/so-do-nha-ga','_blank')">공항 시설안내</button>
+                                        <button class="kakao-website-lostandfound" onclick="window.open('https\://bags.noibaiairport.vn//','_blank')">공항 분실물 등록 및 찾기</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+</div>
+
+</body>
+
+</html>
+
+<script>
+
+$(document).ready(function(){
+    setInterval(updateClock, 1000);
+});
+
+function updateClock() {
+    const localTime = new Date().toLocaleString('ko-KR', {timeZone: 'Asia/Bangkok'});
+    const rokTime = new Date().toLocaleString('ko-KR', {timeZone: 'Asia/Seoul'});
+
+    document.getElementById('localT').innerHTML = localTime;
+    document.getElementById('rokT').innerHTML = rokTime;
+}
+
+</script>

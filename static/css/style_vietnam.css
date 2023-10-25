@@ -4644,3 +4644,336 @@ hr.style17:after {
     margin-top: 5%;
     margin-left: 3%;
 }
+
+
+/* =========================================================================================
+ * 카카오 발송 관련
+ * =========================================================================================*/
+.kakao-nation{
+    border-right: 1px solid rgba(0,0,0,.1);
+}
+.kakao-nation.step2{
+    background: #FFF9EE;
+}
+.kakao-nation .kakao-nation-contents{
+    float: right;
+    padding: 60px 50px 50px 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: 100%;
+}
+.kakao-nation .kakao-nation-contents  .kakao-nation-caution-wrap{
+    width: 100%;
+    height: 20%;
+    padding: 25px 15px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    align-items: center;
+    background: #FFF9EE;
+    border-radius: 20px;
+}
+.kakao-nation .kakao-nation-contents  .kakao-nation-caution-wrap h4{
+    display: block;
+    font-size: 18px;
+    margin-left: 20px;
+    width: calc(100% - 100px);
+}
+
+.kakao-nation .kakao-nation-contents  .kakao-nation-caution-wrap h4 span{
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 6px;
+}
+.kakao-nation .kakao-nation-contents  .kakao-nation-caution-wrap .kakao-nation-caution{
+    width: 130px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff;
+}
+.kakao-nation .kakao-nation-contents  .kakao-nation-caution-wrap .kakao-nation-caution span{
+    width: 70px;
+    height: 1px;
+}
+.kakao-nation .kakao-nation-contents  .kakao-nation-caution-wrap .kakao-nation-caution::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: calc(50% - 30px);
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+}
+.kakao-nation .kakao-nation-contents  .kakao-nation-caution-wrap .kakao-nation-caution::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: calc(50% + 13px);
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+}
+.kakao-nation.step2 .kakao-nation-contents  .kakao-nation-caution-wrap{
+    border: 1px solid #FBB034;
+}
+.kakao-nation.step2 .kakao-nation-contents  .kakao-nation-caution-wrap .kakao-nation-caution{
+    border: 1px solid #FBB034;
+}
+.kakao-nation.step2 .kakao-nation-contents  .kakao-nation-caution-wrap .kakao-nation-caution span{
+    background: #FBB034;
+}
+.kakao-nation.step2 .kakao-nation-contents  .kakao-nation-caution-wrap .kakao-nation-caution::before{
+    content: '2단계';
+    color: #FBB034;
+}
+.kakao-nation.step2 .kakao-nation-contents  .kakao-nation-caution-wrap .kakao-nation-caution::after{
+    content: '황색경보';
+    color: #FBB034;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary {
+    width: 100%;
+    padding: 2% 2% 2% 2%;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 20px;
+    margin-left: 3%; 
+    height: 100%;
+    margin-bottom: 30px;
+}
+.kakao-nation .kakao-nation-contents div {
+    margin: 1% 0% 5% 0%;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary h4{
+    display: block;
+    font-size: 18px;
+    margin-left: 20px;
+    width: 100%;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-time-wrapper {
+    width: 100%;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-time-wrapper div {
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid #333;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-time-wrapper .kakao-time-local i{
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    background: url(../images/globe-clock.png) 100% no-repeat;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-time-wrapper .kakao-time-korea i{
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    background: url(../images/kor-round.png) 100% no-repeat;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-time-wrapper h6{
+    font-size: 16px;
+    font-weight: 400;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-time-wrapper h6 span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-temp{
+    width: 100%;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-temp div{
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-temp div i{
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-temp div h6{
+    font-size: 16px;
+    font-weight: 400;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-temp div h6 span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-temp .kakao-temp-hot{
+    border: 1px solid #ED1C24
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-temp .kakao-temp-hot i{
+    background: url(../images/ico-hot.svg) 50% no-repeat;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-temp .kakao-temp-cold{
+    border: 1px solid #3B6EB6
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-temp .kakao-temp-cold i{
+    background: url(../images/ico-cold.svg) 50% no-repeat;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-weather {
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid #333;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-weather i {
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    background: url(../images/rainny.png) 100% no-repeat;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-weather h6 {
+    font-size: 16px;
+    font-weight: 400;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-weather h6 span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-remind-info {
+    width: 100%;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-remind-info div {
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid #333;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-passport-expire i{
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    background: url(../images/passport.png) 100% no-repeat;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-passport-expire ul{
+    margin: 0% 8% 0% 0%;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-passport-expire h6{
+    font-size: 16px;
+    font-weight: 400;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-passport-expire h6 span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-emergency-contact {
+    width: calc(50% - 15px);
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid #333;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-emergency-contact i {
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    background: url(../images/caution.png) 100% no-repeat;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-emergency-contact h6 {
+    font-size: 16px;
+    font-weight: 400;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-emergency-contact h6 span {
+    font-size: 18px;
+    font-weight: 600;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-airport {
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid #333;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-airport i{
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    background: url(../images/plane.png) 100% no-repeat;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-airport h6{
+    font-size: 16px;
+    font-weight: 400;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-airport h6 span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-airport div {
+    width: 100%;
+    padding: 5% 0% 0% 0%;
+    box-sizing: border-box;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-airport .kakao-map-airport {
+    text-align: center;
+    padding: 16px;
+    background: #3B6EB6;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-airport .kakao-website-lostandfound {
+    text-align: center;
+    padding: 16px;
+    background: #3B6EB6;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+    box-sizing: border-box;
+}

@@ -1259,7 +1259,7 @@
         </ul>
         <ul class="shop">
             <li>장바구니 예상 무게</li>
-            <li>5.99kg</li>
+            <li id="shop-weight">5.99kg</li>
         </ul>
     </div>
     <div class="basket-contents">
@@ -1316,14 +1316,17 @@ $(document).ready(function(){
 
         var price = parseInt($('#basket-price').text().replaceAll(',', ''));
         var weight = parseFloat($('#basket-weight').text());
+
         if(count > 1) {
             var subtractPrice = (price - 399000).toLocaleString('en');
             $('#basket-price').text(subtractPrice);
             $('#basket-price').change();
 
-            var subtractWeight = (weight - 5.99);
+            var subtractWeight = (weight - 5.99).toFixed(2);
             $('#basket-weight').text(subtractWeight);
             $('#basket-weight').change();
+            $('#shop-weight').text(subtractWeight);
+            $('#shop-weight').change();
         }
         else {
             $('#basket-price').text('399,000');
@@ -1331,18 +1334,25 @@ $(document).ready(function(){
 
             $('#basket-weight').text('5.99');
             $('#basket-weight').change();
+            $('#shop-weight').text('5.99');
+            $('#shop-weight').change();
         }
         
         return false;
     });
     $('.plus').click(function () {
         var price = parseInt($('#basket-price').text().replaceAll(',', ''));
-        var addPrice = (price + price).toLocaleString('en');
+        var addPrice = (price + 399000).toLocaleString('en');
+        var weight = parseFloat($('#basket-weight').text());
+        var addWeight = (weight + 5.99).toFixed(2);
+
         $('#basket-price').text(addPrice);
         $('#basket-price').change();
 
-        $('#basket-weight').text(parseFloat($('#basket-weight').text()) + parseFloat($('#basket-weight').text()));
+        $('#basket-weight').text(addWeight);
         $('#basket-weight').change();
+        $('#shop-weight').text(addWeight);
+        $('#shop-weight').change();
 
         var $input = $(this).parent().find('h3');
         $input.text(parseInt($input.text()) + 1);
