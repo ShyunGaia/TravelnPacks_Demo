@@ -4657,7 +4657,7 @@ hr.style17:after {
 }
 .kakao-nation .kakao-nation-contents{
     float: right;
-    padding: 60px 50px 50px 0;
+    padding: 10px 5% 10px 0%;
     box-sizing: border-box;
     overflow-y: auto;
     height: 100%;
