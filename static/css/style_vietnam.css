@@ -1687,6 +1687,44 @@ body.light-grey::after{
     width: calc(100% - 100px);
 }
 
+
+.nation .nation-contents .nation-summary .booking-info {
+    width: calc(100% - 15px);
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid #333;
+}
+.nation .nation-contents .nation-summary .booking-info i {
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    background: url(../images/booking.png) 100% no-repeat;
+}
+.nation .nation-contents .nation-summary .booking-info h6 {
+    font-size: 16px;
+    font-weight: 400;
+}
+.nation .nation-contents .nation-summary .booking-info h6 span {
+    font-size: 18px;
+    font-weight: 600;
+}
+.nation .nation-contents .nation-summary .booking-info ul:last-child {
+    margin-top: 20px;
+}
+.nation .nation-contents .nation-summary .booking-info .warning-text {
+    font-size: 10px;
+    font-weight: 600;
+    color: #ED1C24;
+}
+
 .nation .nation-contents .nation-summary .time-wrapper {
     width: 100%;
     display: flex;
@@ -4757,6 +4795,42 @@ hr.style17:after {
     font-size: 18px;
     margin-left: 20px;
     width: 100%;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-booking-info {
+    width: calc(100% - 15px);
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid #333;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-booking-info i {
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    background: url(../images/booking.png) 100% no-repeat;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-booking-info h6 {
+    font-size: 16px;
+    font-weight: 400;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-booking-info h6 span {
+    font-size: 18px;
+    font-weight: 600;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-booking-info ul:last-child {
+    margin-top: 20px;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-booking-info .warning-text {
+    font-size: 10px;
+    font-weight: 600;
+    color: #ED1C24;
 }
 .kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-time-wrapper {
     width: 100%;
