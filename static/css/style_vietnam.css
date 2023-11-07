@@ -1766,6 +1766,91 @@ body.light-grey::after{
     font-weight: 600;
 }
 
+.nation .nation-contents .nation-summary .nation-sensory-uv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nation .nation-contents .nation-summary .nation-sensory-uv div{
+    width: calc(50% - 15px);
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.nation .nation-contents .nation-summary .nation-sensory-uv div i{
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+.nation .nation-contents .nation-summary .nation-sensory-uv div h6{
+    font-size: 16px;
+    font-weight: 400;
+}
+.nation .nation-contents .nation-summary .nation-sensory-uv div h6 span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.nation .nation-contents .nation-summary .nation-sensory-uv .sensory-temp{
+    border: 1px solid #6b03fc;
+}
+.nation .nation-contents .nation-summary .nation-sensory-uv .sensory-temp i{
+    background: url(../images/temperatures.png) 50% no-repeat;
+}
+.nation .nation-contents .nation-summary .nation-sensory-uv .uv-rays{
+    border: 1px solid #fca103;
+}
+.nation .nation-contents .nation-summary .nation-sensory-uv .uv-rays i{
+    background: url(../images/uv.png) 50% no-repeat;
+}
+.nation .nation-contents .nation-summary .nation-humid-wind{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nation .nation-contents .nation-summary .nation-humid-wind div{
+    width: calc(50% - 15px);
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.nation .nation-contents .nation-summary .nation-humid-wind div i{
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+.nation .nation-contents .nation-summary .nation-humid-wind div h6{
+    font-size: 16px;
+    font-weight: 400;
+}
+.nation .nation-contents .nation-summary .nation-humid-wind div h6 span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.nation .nation-contents .nation-summary .nation-humid-wind .humidity{
+    border: 1px solid #66a3d1;
+}
+.nation .nation-contents .nation-summary .nation-humid-wind .humidity i{
+    background: url(../images/humidity.png) 50% no-repeat;
+}
+.nation .nation-contents .nation-summary .nation-humid-wind .wind{
+    border: 1px solid #979699;
+}
+.nation .nation-contents .nation-summary .nation-humid-wind .wind i{
+    background: url(../images/storm.png) 50% no-repeat;
+}
+
 .nation .nation-contents .nation-summary .nation-weather {
     width: calc(100% - 15px);
     background: #fff;
@@ -4910,6 +4995,87 @@ hr.style17:after {
 .kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-temp .kakao-temp-cold i{
     background: url(../images/ico-cold.svg) 50% no-repeat;
 }
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-sensory-uv{
+    width: 100%;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-sensory-uv div{
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-sensory-uv div i{
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-sensory-uv div h6{
+    font-size: 16px;
+    font-weight: 400;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-sensory-uv div h6 span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-sensory-uv .kakao-sensory-temp{
+    border: 1px solid #6b03fc;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-sensory-uv .kakao-sensory-temp i{
+    background: url(../images/temperatures.png) 50% no-repeat;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-sensory-uv .kakao-uv-rays{
+    border: 1px solid #fca103;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-sensory-uv .kakao-uv-rays i{
+    background: url(../images/uv.png) 50% no-repeat;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-humid-wind{
+    width: 100%;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-humid-wind div{
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-humid-wind div i{
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-humid-wind div h6{
+    font-size: 16px;
+    font-weight: 400;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-humid-wind div h6 span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-humid-wind .kakao-humidity{
+    border: 1px solid #66a3d1;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-humid-wind .kakao-humidity i{
+    background: url(../images/humidity.png) 50% no-repeat;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-humid-wind .kakao-wind{
+    border: 1px solid #979699;
+}
+.kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-humid-wind .kakao-wind i{
+    background: url(../images/storm.png) 50% no-repeat;
+}
+
 .kakao-nation .kakao-nation-contents .kakao-nation-summary .kakao-nation-weather {
     width: 100%;
     background: #fff;
